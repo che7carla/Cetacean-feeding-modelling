@@ -2,8 +2,10 @@ clear all
 close all
 clc
 %%
-% %% Add path and directory
-%addpath(genpath("..\..\lib\config\"));
+
+%% Add path and directory
+addpath(genpath("..\..\lib\config\"));
+load_path_CFMs();
 
 %% Datasets generation
 % Process the original dataset for each dolphin species, generating the dataset needed 
