@@ -3,6 +3,10 @@ clear all;
 clc;
 close all;
 
+% Add path and directory
+addpath(genpath("..\..\lib\config\"));
+load_path_CFMs();
+
 % Define a generic variable for the dataset: in this case the dataset with
 % the environmental variables extraxted for all the Gulf of Taranto area,
 % to make extrapolation.
