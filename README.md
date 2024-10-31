@@ -47,11 +47,11 @@ To set up the project, follow these steps:
 
 1. Clone the repository: 
     ```
-	git clone --single-branch --branch master https://github.com/che7carla/Cetacean-feeding-modelling/.git
+	git clone https://github.com/che7carla/Cetacean-feeding-modelling.git
     ```
 2. Navigate to the project directory:
     ```
-    cd che7carla
+    cd Cetacean-feeding-modelling
     ```
 
 ## Usage [[to ToC]](#table-of-contents)
