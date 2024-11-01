@@ -11,7 +11,7 @@
 
 ## Description [[to ToC]](#table-of-contents)
 
-Cetacean Feeding Models (CFMs) is a machine learning-based framework developed to predict cetacean feeding activity in relation to environmental variables in the central and eastern Mediterranean Sea. CFMs combine behavioral data with 20 environmental predictors from sources such as Copernicus Marine Service (CMS) and EMODnet-bathymetry. By integrating Random Forest and RUSBoost algorithms, the CFMs capture species-specific feeding patterns for three target cetacean species - striped dolphin, bottlenose dolphin, and Risso's dolphin - in the Gulf of Taranto, our study area, providing a tool for marine conservation and management through predictive feeding maps and offering insights to improve knowledge on feeding habitat characteristics.
+Cetacean Feeding Modelling (CFMs) is a Machine Learning-based framework developed to predict cetacean feeding activity in relation to environmental variables in the Central-eastern Mediterranean Sea. CFMs combine behavioral data ('Feeding' vs 'Other' behaviors) with 20 environmental predictors derived from sources such as Copernicus Marine Service (CMS) and EMODnet-bathymetry. By integrating Random Forest and RUSBoost classifier algorithms, the CFMs capture species-specific feeding patterns for three target cetacean species - striped dolphin, common bottlenose dolphin, and Risso's dolphin - in the Gulf of Taranto, our study area, providing a tool for marine conservation and management through predictive feeding maps and offering insights to improve knowledge on feeding habitat characteristics.
 
 
 ## Project Structure [[to ToC]](#table-of-contents)
