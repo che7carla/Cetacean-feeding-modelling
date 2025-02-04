@@ -4,19 +4,19 @@ clc;
 close all;
 
 % Add path and directory
-addpath(genpath("..\..\lib\config\"));
-load_path_CFMs();
+% addpath(genpath("..\..\lib\config\"));
+% load_path_CFMs();
 
 % Define a generic variable for the dataset: in this case the dataset with
 % the environmental variables extraxted for all the Gulf of Taranto area,
 % to make extrapolation.
-dataset = 'dt_Got.xlsx';
+dataset = 'dt_GOT.xlsx';
 
 % Load the dataset into a table format for processing.
 dataTable = readtable(dataset);
 
 % Extract relevant features from the dataset for prediction.
-dataFeatures = dataTable(:, 1:6);
+dataFeatures = dataTable(:, 4:9);
 
 % Load the trained model.
 trainedModelFile = 'result_experiment_trained_model.mat'; %use the name of the best model for the species
@@ -45,10 +45,18 @@ dailyDataFile = 'predicted_labels_output.xlsx';
 % Load the daily prediction data into a table.
 % Modify the path as needed if using a different file.
 dailyData = readtable(dailyDataFile);
+timeStrings = cellstr(dailyData.time);
+timeStrings1 = timeStrings(1:29760);
+timeStrings2 = timeStrings(29761:end);
+
+timeDates = datetime(timeStrings, 'InputFormat', 'dd-MM-yyyy');
+timeDates1 = datetime(timeStrings1, 'InputFormat', 'dd/MM/yyyyHH:mm:ss');
+timeDates2 = datetime(timeStrings2, 'InputFormat', 'dd-MMM-yyyy', 'Locale', 'it_IT');
+timeDates = [timeDates1; timeDates2];
 
 % Add a column to represent the month extracted from the 'time' column.
 % Assumes 'time' is in a date-compatible format.
-dailyData.Month = month(dailyData.time);
+dailyData.Month = month(timeDates);
 
 % Initialize a table to store the summarized results.
 summaryTable = table('Size', [0 6], ...
