@@ -66,7 +66,7 @@ To run the experiment follow these steps:
 \src\t-test\ttest.m
 ````
 
-3. Run the script to predict the Risso's dolphin feeding habitats for all the Gulf of Taranto using the M_bio model already trained, on the three summer months of 2023:
+3. Run the script to predict the Risso's dolphin feeding habitats for all the Gulf of Taranto using the M_bio model already trained, on the three summer months of 2024:
 ````
 \src\extrapolation\Extrapolation_Gulf_of_Taranto.m
 ````
