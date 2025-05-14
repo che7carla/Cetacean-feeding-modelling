@@ -76,6 +76,11 @@ To run the experiment follow these steps:
 
 For any questions or inquiries, please contact [Carla Cherubini](mailto:c.cherubini@phd.poliba.it) or [Rosalia Maglietta](mailto:rosalia.maglietta@cnr.it)
 
+## Cite this
+
+Cherubini, C., Cipriano, G., Saccotelli, L., Dimauro, G., Coppini, G., Carlucci, R., Fanizza, C. and Maglietta, R., 2025. Cetacean feeding modelling using machine learning: A case study of the Central-Eastern Mediterranean Sea. Ecological Informatics, p.103066.
+
+
 ## License [[to ToC]](#table-of-contents)
 
 This project is licensed under the [Apache License 2.0](LICENSE).
